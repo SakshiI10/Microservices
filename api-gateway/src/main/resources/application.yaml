@@ -11,12 +11,12 @@ spring:
         webmvc:
           routes:
             - id: User-Service
-              uri: http://localhost:8081
+              uri: lb://User-Service
               predicates:
                 - Path=/courseApi/**
 
             - id: User2-Service
-              uri: http://localhost:8082
+              uri: lb://User2-Service
               predicates:
                 - Path=/studentApi/**
 
