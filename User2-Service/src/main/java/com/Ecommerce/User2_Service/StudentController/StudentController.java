@@ -35,7 +35,7 @@ public class StudentController {
         return name;
     }
 	
-//	Rest Template version: You can get the output at http://localhost:8080/studentApi/student-with-course 
+//	Rest Template Implementation for Inter-Service Communication: You can get the output at http://localhost:8080/studentApi/student-with-course 
 //	@GetMapping("/student-with-course")
 //	public Map<String, Object> getStudentWithCourse(){
 //		List<String> students=studentsName();
@@ -48,6 +48,7 @@ public class StudentController {
 //		return response;
 //	}
 
+//	OpenFeign Implementation for Inter-Service Communication
 	@GetMapping("/student-with-course")
 	public Map<String, Object> getStudentWithCourse(){
 		List<String> students=studentsName();
